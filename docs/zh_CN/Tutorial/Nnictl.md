@@ -304,7 +304,7 @@ nnictl 支持的命令：
     > 更新 Experiment 的 Trial 数量
     
     ```bash
-    nnictl update trialnum --id [experiment_id] --value [trial_num]
+    nnictl update trialnum [experiment_id] --value [trial_num]
     ```
 
 <a name="trial"></a>
@@ -357,7 +357,7 @@ nnictl 支持的命令：
     > 结束 Trial 任务
     
     ```bash
-    nnictl trial [trial_id] --experiment [experiment_id]
+    nnictl trial kill [experiment_id] --trial_id [trial_id]
     ```
 
 <a name="top"></a>
@@ -719,6 +719,22 @@ nnictl 支持的命令：
 ### 管理 Web 界面
 
 * **nnictl webui url**
+  
+  * Description
+    
+    Show an experiment's webui url
+  
+  * Usage
+    
+    ```bash
+    nnictl webui url [options]
+    ```
+  
+  * Options
+  
+  | Name, shorthand | Required | Default | Description   |
+  | --------------- | -------- | ------- | ------------- |
+  | id              | False    |         | Experiment ID |
 
 <a name="tensorboard"></a>
 
